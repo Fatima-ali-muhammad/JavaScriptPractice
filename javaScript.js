@@ -481,3 +481,18 @@ function languageFunction(languageCode) {
 }
 
 
+document.querySelector('#change-background').addEventListener('click',function(){
+  document.querySelector('body').style.backgroundColor='cyan'
+ });
+
+
+ 
+document.querySelector('#text-color').addEventListener('click',function(){
+  document.querySelector('.content').style.color='white'
+ });
+
+
+
+ document.querySelector('#change-width').addEventListener('click',function(){
+  document.querySelector('.width').style.width='5rem'
+ });
