@@ -46,14 +46,16 @@
     <button id="change-width">Change Heading's Width</button>
 
     <h1 class="width">This is heading 1</h1>-->
-                
+       <div class="btns">        
      
     
     <button class="show-modal" id="m1">Show Modal 1</button>
     <button class="show-modal" id="m2">Show Modal 2</button>
     <button class="show-modal" id="m3">Show Modal 3</button>
 
+       </div>
 
+       <p id="countryHolder">Your selected country will show up here!</p>
     <div class="modal hidden">
         <button class="close-modal">&times;</button>
         <h1>I'm modal window 😍 </h1>
@@ -63,6 +65,15 @@
              assumenda voluptatibus eius ullam quod! Delectus officia earum reprehenderit ullam.
              😊
             </p>
+
+            <select name="Country" id="country">
+                <option value="" selected disabled>Country</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Pakistan" >Pakistan</option>
+                <option value="Iran" >Iran</option>
+            </select>
+             <br>
+            <button class="submit-btn">Submit</button>
     </div>
 
     <div class="overlay  hidden"> 

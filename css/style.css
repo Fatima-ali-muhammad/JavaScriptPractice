@@ -34,11 +34,19 @@ body{
     line-height: 1.5;
     height: 100vh;
     position: relative;
+    background: linear-gradient(to top left,#19d7f0,#668ad8);
+
+}
+
+.btns{
     display: flex;
     align-items: flex-start;
     justify-content:center;
-    background: linear-gradient(to top left,#19d7f0,#668ad8);
+}
 
+
+#countryHolder{
+  text-align: center;
 }
 
 .show-modal{
@@ -106,4 +114,23 @@ p{
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(3px);
     z-index:5;
+}
+
+
+
+#country{
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    border-color: black;
+}
+
+
+.submit-btn{
+    padding: 0.5rem 3rem;
+    border-radius: 1rem;
+    border-color: black;
+    float: right;
+    cursor: pointer;
+
 }

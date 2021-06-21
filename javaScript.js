@@ -511,7 +511,13 @@ document.querySelector('#text-color').addEventListener('click',function(){
 
  const overlay = document.querySelector('.overlay');
 
- const closeModal = document.querySelector('.close-modal')
+ const closeModal = document.querySelector('.close-modal');
+
+ const countryHolder = document.querySelector('#countryHolder');
+
+ const submitBtn = document.querySelector('.submit-btn');
+
+ const  countrySelector = document.querySelector('#country');
 
 
 
@@ -573,3 +579,8 @@ document.addEventListener('keydown', function (event) {
  //console.log('A key press happened'+event.key)
  //});
 
+submitBtn.addEventListener('click', function(){
+    countryHolder.textContent =  countrySelector.value;
+    closeModel();
+
+});
