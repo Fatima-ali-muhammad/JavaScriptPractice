@@ -449,7 +449,9 @@ function languageFunction(languageCode) {
 
 
  //let languageManipulation = document.querySelector('#languageInput').value;
- document.querySelector('#changeLanguage').addEventListener('click',function(){
+
+ 'use strict';
+ /*document.querySelector('#changeLanguage').addEventListener('click',function(){
   let languageManipulation = document.querySelector('#languageInput').value;
   languageFunction(languageManipulation)
  })
@@ -495,4 +497,79 @@ document.querySelector('#text-color').addEventListener('click',function(){
 
  document.querySelector('#change-width').addEventListener('click',function(){
   document.querySelector('.width').style.width='5rem'
- });
+ });*/
+
+ 
+
+ /*-----------------------------------*/
+
+ 'use strict';
+
+ const btnShowModel = document.querySelectorAll('.show-modal');
+
+ const modal = document.querySelector('.modal');
+
+ const overlay = document.querySelector('.overlay');
+
+ const closeModal = document.querySelector('.close-modal')
+
+
+
+
+ let  openModal = function (){
+  modal.classList.remove('hidden');
+
+  overlay.classList.remove('hidden');
+ }
+
+
+ let  closeModel = function (){
+  modal.classList.add('hidden');
+
+  overlay.classList.add('hidden');
+ }
+
+ for(let i=0 ; i < btnShowModel.length ; i++){
+
+  btnShowModel[i].addEventListener('click',openModal)//function(){
+   
+   // modal.classList.remove('hidden');
+
+  //  overlay.classList.remove('hidden');
+
+  //  alert(`You clicked on`+ btnShowModel[i].textContent)
+
+
+ // });
+
+  
+
+ }
+
+ 
+ closeModal.addEventListener('click',closeModel)//function(){
+
+   //modal.classList.add('hidden');
+   //overlay.classList.add('hidden');
+
+ //})
+
+overlay.addEventListener('click',closeModel)
+
+
+document.addEventListener('keydown', function (event) {
+ if (event.key === 'Escape') {
+      closeModel();
+ }
+
+//console.log('A key press happened'+event.key)
+});
+
+//document.addEventListener('keydown', function (event) {
+  //if (event.key === 'Enter') {
+    //openModal();
+ // }
+ 
+ //console.log('A key press happened'+event.key)
+ //});
+
